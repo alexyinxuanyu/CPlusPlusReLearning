@@ -37,6 +37,7 @@ struct Factorial<0>
 };
 int main()
 {
+  //能带来30倍的加速
   clock_t start, end;
   start = clock();
   foo();
