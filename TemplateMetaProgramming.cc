@@ -35,6 +35,7 @@ struct Factorial<0>
     value = 1
   };
 };
+
 int main()
 {
   //能带来30倍的加速

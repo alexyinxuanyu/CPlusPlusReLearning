@@ -47,3 +47,4 @@ int add(auto x, auto y){
 ```
 **注意** auto不能用来推导数组类型
 
+**注意** typename 和 class 在模板参数列表中没有区别，在typename这个关键字出现之前，都是使用class来定义模板参数的。但在模板定义中有嵌套依赖类型的变量时，需要用typename消除歧义。
