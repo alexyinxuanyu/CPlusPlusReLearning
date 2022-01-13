@@ -31,7 +31,7 @@ return 0;
 ```
 
 # AUTO
-
+ 
 有了auto之后变化最大的就是迭代器，如下：
 ```
 for(vector<int>::const_iterator it = vec.begin();it!=vec.end();++i)
