@@ -16,7 +16,6 @@ Fred::Fred() { x_ = whatever; }
 我们依然必须非常清楚这个元组包含多少个对象，各个对象是什么类型，非常麻烦。
 
 C++17 完善了这一设定，给出的结构化绑定可以让我们写出这样的代码：
-
 ```
 #include <iostream>
 #include <tuple>
