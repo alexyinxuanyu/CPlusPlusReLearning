@@ -47,3 +47,17 @@ int add(auto x, auto y){
 **注意** auto不能用来推导数组类型
 
 **注意** typename 和 class 在模板参数列表中没有区别，在typename这个关键字出现之前，都是使用class来定义模板参数的。但在模板定义中有嵌套依赖类型的变量时，需要用typename消除歧义。
+
+**尾返回类型推导**
+
+你可能会思考，在介绍 auto 时，我们已经提过 auto 不能用于函数形参进行类型推导，那么 auto
+能不能用于推导函数的返回类型呢？还是考虑一个加法函数的例子，在传统 C++ 中我们必须这么写：
+20
+2.3 类型推导 第 2 章语言可用性的强化
+template<typename R, typename T, typename U>
+R add(T x, U y) {
+return x+y;
+}
+注意：typename 和 class 在模板参数列表中没有区别，在 typename 这个关键字出现之前，都
+是使用 class 来定义模板参数的。但在模板中定义有嵌套依赖类型的变量时，需要用 typename
+消除歧义
