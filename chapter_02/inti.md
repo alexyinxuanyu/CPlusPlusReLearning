@@ -58,6 +58,7 @@ template<typename R, typename T, typename U>
 R add(T x, U y) {
 return x+y;
 }
+
 注意：typename 和 class 在模板参数列表中没有区别，在 typename 这个关键字出现之前，都
 是使用 class 来定义模板参数的。但在模板中定义有嵌套依赖类型的变量时，需要用 typename
 消除歧义
